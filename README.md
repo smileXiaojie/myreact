@@ -7,7 +7,7 @@ In the project directory, you can run:
 ### `yarn start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
+Open [http://localhost:3030](http://localhost:3030) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
@@ -37,32 +37,27 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+此项目基于已经安装 antd 的环境
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `npm install antd --save   ||  yarn add antd`
 
-### Code Splitting
+antd 是基于 Ant Design 设计体系的 React UI 组件库，主要用于研发企业级中后台产品。
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### `yarn add react-app-rewired customize-cra`
 
-### Analyzing the Bundle Size
+这里我们使用 react-app-rewired （一个对 create-react-app 进行自定义配置的社区解决方案）。
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+引入 react-app-rewired 并修改 package.json 里的启动配置。
 
-### Making a Progressive Web App
+### `yarn add babel-plugin-import`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+babel-plugin-import 是一个用于按需加载组件代码和样式的 babel 插件（原理），现在我们尝试安装它并修改 config-overrides.js 文件。
 
-### Advanced Configuration
+### `yarn add less less-loader`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+antd自定义主题颜色
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### `npm install --save react-router-dom`
+ 
+react路由
